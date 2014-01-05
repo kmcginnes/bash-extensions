@@ -1,0 +1,7 @@
+#!/bin/sh
+# hack: Merge the latest changes from the master branch into your current branch
+
+source "$(git --exec-path)/git-sh-setup"
+
+currentBranch=$(git symbolic-ref HEAD 2>/dev/null --short)
+git dt master..${currentBranch}
