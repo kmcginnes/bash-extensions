@@ -3,6 +3,20 @@ bash-extensions
 
 This is a collection of my bash and git extensions.
 
+## git-tupdate
+
+Using git-tf, this will switch to master (if not already there), perform a pull from TFS, switch back to your working branch, and finish with a rebase.
+
+From a clean feature branch or master:
+```
+git tupdate
+```
+
+From any clean branch:
+```
+git tupdate some_kick_ass_feature
+```
+
 ## git-tship
 
 Using git-tf, this will merge the latest TFS changes first to resolve conflicts, then squash the branch into master, delete the now merged branch, then push it to TFS. It can optionally associate a changeset to a TFS work item.
