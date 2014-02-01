@@ -15,14 +15,6 @@ then
 	die "You can not ship from master"
 fi
 
-git tupdate || { die "Updating from TFS failed" }
+git update || { die "Updating from TFS failed" }
 git squash || { die "Squash-merging into master failed" }
-
-if [ -z "$2" ]
-then
-	echo "$(tput setaf 6)Checking in ${currentBranch} to TFS...$(tput sgr0)"
-	git tf checkin -m "$1" || { die "Checking in ${currentBranch} to TFS failed" }
-else
-	echo "$(tput setaf 6)Checking in ${currentBranch} to TFS and associating to #$2...$(tput sgr0)"
-	git tf checkin -m "$1" --associate=$2 || { die "Checking in ${currentBranch} to TFS failed" }
-fi
+git push
