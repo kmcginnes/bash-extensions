@@ -1,7 +1,7 @@
 bash-extensions
 ===============
 
-This is a collection of my bash and git extensions.
+I've been using git with TFS successfully for years. I've developed a workflow that works well for me. This is a repository of some of the git extensions for bash that have reduced my carpal tunnel.
 
 ## git-tupdate
 
