@@ -3,6 +3,10 @@ bash-extensions
 
 I've been using git with TFS successfully for years. I've developed a workflow that works well for me. This is a repository of some of the git extensions for bash that have reduced my carpal tunnel.
 
+I started with a toolset consisting of GitHub for Windows, poshgit, and console2 for Windows. This worked great, until my git repos grew in size from a couple hundred megs to over 700 MB of tracked files. Then performance suffered to the point that I didn't want to use git any more.
+
+That's when I moved my git repos onto a shared network drive between my Windows VM and OS X. This allowed me to use the OS X version of git (and GitHub for OS X). Performance is worlds better in this environment.
+
 ## Workflow
 
 I have greatly reduced my source control struggles by following one simple rule: keep master clean. I never commit manually to master. The master branch is my mirror of TFS. Therefore it is holy.
