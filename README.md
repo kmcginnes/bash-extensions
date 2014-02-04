@@ -7,6 +7,24 @@ I started with a toolset consisting of GitHub for Windows, poshgit, and console2
 
 That's when I moved my git repos onto a shared network drive between my Windows VM and OS X. This allowed me to use the OS X version of git (and GitHub for OS X). Performance is worlds better in this environment.
 
+## Installation
+
+### Mac
+
+On the Mac, you can put these scripts into any folder on your path. You may have to add the executable flag to the files. For example:
+
+```
+sudo chmod +x git-tupdate
+```
+
+### Windows
+
+On Windows you can copy the bash scripts into your git directory:
+
+```
+C:\Program Files (x86)\Git\libexec\git-core
+```
+
 ## Workflow
 
 I have greatly reduced my source control struggles by following one simple rule: keep master clean. I never commit manually to master. The master branch is my mirror of TFS. Therefore it is holy.
